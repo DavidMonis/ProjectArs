@@ -1,1 +1,139 @@
+:root{
+  --bg:#0b0f17;
+  --surface:#111827;
+  --surface-2:#0f172a;
+  --text:#e6e9ef;
+  --muted:#97a0af;
+  --accent:#7c5cff;
+  --accent-2:#4cc9f0;
+  --border:rgba(255,255,255,0.08);
+  --shadow:0 10px 30px rgba(0,0,0,0.35);
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,0.15), transparent 50%),
+              radial-gradient(1000px 600px at 110% 10%, rgba(76,201,240,0.12), transparent 40%),
+              var(--bg);
+  color:var(--text);
+  font:400 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+}
+
+.container{width:min(1100px,90vw); margin-inline:auto}
+
+.site-header{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter:saturate(140%) blur(10px);
+  background:linear-gradient(180deg, rgba(10,12,18,0.85), rgba(10,12,18,0.55));
+  border-bottom:1px solid var(--border);
+}
+
+.header-row{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 0;
+  gap:16px;
+}
+
+.brand{display:flex; align-items:center; gap:14px}
+.logo{
+  width:42px; height:42px; border-radius:12px;
+  display:grid; place-items:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff; font-weight:800;
+  box-shadow:var(--shadow);
+}
+.titles h1{margin:0; font-size:1.4rem; letter-spacing:0.3px}
+.titles .tagline{margin:2px 0 0; color:var(--muted); font-size:0.95rem}
+
+.tabs{
+  display:flex; gap:8px; align-items:center;
+  background:rgba(255,255,255,0.03);
+  padding:6px; border-radius:999px; border:1px solid var(--border);
+}
+.tabs label{
+  cursor:pointer; user-select:none;
+  padding:8px 14px; border-radius:999px;
+  color:var(--muted); font-weight:600; letter-spacing:0.2px;
+  transition:all .2s ease;
+}
+.tabs label:hover{color:var(--text)}
+/* Active tab styling driven by radio state */
+#tab-basic:checked ~ .site-header .tabs label[for="tab-basic"],
+#tab-progress:checked ~ .site-header .tabs label[for="tab-progress"]{
+  background:linear-gradient(135deg, rgba(124,92,255,0.25), rgba(76,201,240,0.20));
+  color:var(--text);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+main{padding:28px 0 64px}
+
+.tab-panel{display:none; animation:fade .25s ease}
+#tab-basic:checked ~ main #panel-basic{display:block}
+#tab-progress:checked ~ main #panel-progress{display:block}
+
+@keyframes fade{from{opacity:.5; transform:translateY(6px)} to{opacity:1; transform:none}}
+
+.grid.two{
+  display:grid; gap:18px; margin:20px 0 6px;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:18px 18px;
+  box-shadow:var(--shadow);
+}
+.card h2, .card h3{margin:0 0 10px}
+.card ul{margin:0; padding-left:18px}
+.card.callout{
+  border:1px dashed rgba(124,92,255,0.35);
+  background:linear-gradient(180deg, rgba(124,92,255,0.12), rgba(124,92,255,0.04));
+}
+.card.empty p{margin:0 0 8px}
+.hint{
+  margin-top:12px; padding:12px; border-radius:12px;
+  background:rgba(255,255,255,0.03); border:1px solid var(--border);
+}
+
+.links{display:flex; gap:10px; margin-top:16px}
+.btn{
+  display:inline-block; text-decoration:none; color:#fff; font-weight:700;
+  padding:10px 14px; border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:var(--shadow);
+}
+.btn:hover{filter:brightness(1.06)}
+.btn.ghost{
+  background:transparent; color:var(--text);
+  border:1px solid var(--border);
+}
+
+.badge{
+  font-size:0.75rem; padding:4px 8px; border-radius:999px;
+  border:1px solid var(--border); color:var(--muted)
+}
+.progress-item header{
+  display:flex; align-items:center; justify-content:space-between; gap:12px
+}
+.progress-item .meta{
+  display:flex; gap:14px; padding-left:18px; margin:10px 0 0;
+}
+.progress-item .meta a{color:#cfe7ff}
+
+.site-footer{
+  border-top:1px solid var(--border);
+  background:rgba(0,0,0,0.35);
+}
+.site-footer .container{padding:18px 0}
+.site-footer p{color:var(--muted); margin:0; font-size:0.95rem}
+
+@media (max-width:540px){
+  .titles .tagline{display:none}
+}
 
