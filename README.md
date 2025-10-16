@@ -12,17 +12,19 @@ Create a new story-first cooperative strategy experience and develop **AI teamma
 
 ## Roadmap (High-Level)
 - **Year 1 — Foundations:**  
-  Simple strategy loop (build → gather → train → final battle), lightweight leaderboard on the site. Learn the basics of ML, build a first PyTorch agent, and try a beginner Kaggle competition. Weekly devlogs and public GitHub.
+  Buiid simple strategy game (build → gather → train → final battle), with lightweight leaderboard on the site. 
+  Learn the basics of ML, build a first PyTorch agent, and try a beginner Kaggle competition. 
+  Weekly devlogs on youtube channel: https://www.youtube.com/@RealProjectArs 
+  Public GitHub updates on website: https://davidmonis.github.io/ProjectArs/
 - **Year 2 — Integration:**  
-  Connect the AI agent to the custom game; design a more capable agent; draft a narrative skeleton for a simple multiplayer story game; continue outreach (Shorts, maybe Patreon).
+  Design a more capable agent and connect agent to my game
+  Draft a narrative skeleton for a simple multiplayer story game
 - **Year 3 — Expansion:**  
-  Build the planned simple story-strategy multiplayer title; deepen AI specialization; start next-year’s applied agent; grow community (Discord/Forum).
+  Build the planned simple story-strategy multiplayer title
+  Deepen AI specialization
 - **Year 4 — Application:**  
-  Deliver an agent that can actually play the new game well and ship it; evaluate commercial options.
+  Deliver an agent that can actually play the new game well.
 
-## Weekly Rhythm (Year 1)
-Alternate focus between **Game Engines (1, 2)** and **Thesis Project (1, 2)**.  
-Publish weekly progress to YouTube and the thesis page, then post a combined update to the ProjectArs site.
 
 ## Progress
 Updates will appear on the website’s **Progress** tab.
