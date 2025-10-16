@@ -3,138 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ProjectArs</title>
+  <title>ProjectArs — Progress</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="ProjectArs — a cooperative story-driven strategy game with adaptive AI teammates." />
+  <meta name="description" content="ProjectArs — development progress and contact." />
 </head>
 <body>
-
-  <!-- CSS-only tabs (no JS) -->
-  <input type="radio" name="tab" id="tab-basic" checked hidden>
-  <input type="radio" name="tab" id="tab-progress" hidden>
-
-  <header class="site-header">
-    <div class="container header-row">
-      <div class="brand">
-        <div class="logo">PA</div>
-        <div class="titles">
-          <h1>ProjectArs</h1>
-          <p class="tagline">Co-op strategy + adaptive AI teammates</p>
-        </div>
-      </div>
-
-      <nav class="tabs" role="tablist" aria-label="Sections">
-        <label for="tab-basic" role="tab" aria-controls="panel-basic" id="tablabel-basic">Basic Info</label>
-        <label for="tab-progress" role="tab" aria-controls="panel-progress" id="tablabel-progress">Progress</label>
+  <!-- New minimal top bar -->
+  <header class="topbar">
+    <div class="container bar">
+      <a class="brand" href="#">
+        <span class="logo">PA</span>
+        <span class="wordmark">ProjectArs</span>
+      </a>
+      <nav class="nav">
+        <a href="#progress">Progress</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="https://davidmonis.github.io/ProjectArs/" target="_blank" rel="noopener">Open Site</a>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Development Progress</h1>
+      <p class="sub">Milestones, devlogs, and build notes for ProjectArs.</p>
+    </div>
+  </section>
+
   <main class="container">
-    <!-- BASIC INFO -->
-    <section id="panel-basic" class="tab-panel" aria-labelledby="tablabel-basic">
-      <div class="card">
-        <h2>Vision</h2>
-        <p>
-          Build a new <strong>story-driven cooperative strategy game</strong> where you play alongside friends
-          or an <strong>adaptive AI teammate</strong> that can seamlessly substitute a missing player and
-          gradually <em>learn your playstyle</em>.
-        </p>
-      </div>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>Year 1 — Foundations</h3>
-          <ul>
-            <li><strong>Game:</strong> simple strategy loop (build → gather → train units → final battle).</li>
-            <li><strong>Leaderboard:</strong> lightweight board shared on the website.</li>
-            <li><strong>AI:</strong> learn the basics; build a first PyTorch agent; join a beginner Kaggle competition.</li>
-            <li><strong>Devlog:</strong> weekly YouTube updates; public GitHub; AI notes on the web.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Year 2 — Integration</h3>
-          <ul>
-            <li>Connect the AI agent with the custom game.</li>
-            <li>Design a more capable agent tailored to the strategy gameplay.</li>
-            <li>Draft the concept &amp; narrative skeleton of a simple multiplayer story game.</li>
-            <li>Continue outreach; add Shorts (YT/IG/TikTok), maybe Patreon.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Year 3 — Expansion</h3>
-          <ul>
-            <li>Build the planned simple story-strategy multiplayer title.</li>
-            <li>Deepen AI specialization; start next-year’s applied agent.</li>
-            <li>Enhance community: Discord/Forum, polish the pipeline.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Year 4 — Application</h3>
-          <ul>
-            <li>Deliver an AI agent that can <strong>play the new game well</strong> and ship it.</li>
-            <li>Evaluate <strong>commercial potential</strong> and sustainability.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card callout">
-        <h3>Weekly Rhythm (Year 1)</h3>
-        <p>
-          Alternate focus between <strong>Game Engines (1, 2)</strong> and <strong>Thesis Project (1, 2)</strong>.
-          Post weekly progress to YouTube and the thesis page, then publish a combined update to the ProjectArs website.
-        </p>
-      </div>
-
-      <div class="links">
-        <a class="btn" href="https://davidmonis.github.io/ProjectArs/" target="_blank" rel="noopener">Open ProjectArs Site</a>
-        <a class="btn ghost" href="#panel-progress" onclick="document.getElementById('tab-progress').checked = true">Jump to Progress</a>
-      </div>
-      <noscript><p class="muted">Tabs work without JavaScript — use the buttons above to switch.</p></noscript>
-    </section>
-
-    <!-- PROGRESS -->
-    <section id="panel-progress" class="tab-panel" aria-labelledby="tablabel-progress">
+    <!-- PROGRESS ONLY -->
+    <section id="progress" class="section">
       <div class="card empty">
         <h2>Progress</h2>
-        <p>No public updates yet. Check back soon!</p>
-        <div class="hint">
-          <p><strong>How you’ll fill this:</strong></p>
-          <ol>
-            <li>Create entries like devlogs, milestones, or links to builds.</li>
-            <li>Use a simple structure (date, title, summary, links/screenshots).</li>
-            <li>Append new cards here in chronological order.</li>
-          </ol>
-        </div>
+        <p>No public updates yet. New entries will appear here.</p>
+        <details class="hint">
+          <summary>How to add an update (template)</summary>
+          <article class="card progress-item">
+            <header>
+              <h3>[YYYY-MM-DD] Title of update</h3>
+              <span class="badge">Devlog</span>
+            </header>
+            <p>Short summary of what changed and why it matters.</p>
+            <ul class="meta">
+              <li>Build: <a href="#">Download</a></li>
+              <li>Video: <a href="#">YouTube</a></li>
+              <li>Code: <a href="#">GitHub commit</a></li>
+            </ul>
+          </article>
+        </details>
       </div>
 
-      <!-- Sample template (copy & paste, then edit)
+      <!-- Example (uncomment to use)
       <article class="card progress-item">
         <header>
-          <h3>[YYYY-MM-DD] Title of update</h3>
-          <span class="badge">Devlog</span>
+          <h3>2025-10-16 — Initial scaffold</h3>
+          <span class="badge">Setup</span>
         </header>
-        <p>Short summary of what changed and why it matters.</p>
+        <p>Created the public Progress page and structure for future devlogs.</p>
         <ul class="meta">
-          <li>Build: <a href="#">Download</a></li>
-          <li>Video: <a href="#">YouTube</a></li>
-          <li>Code: <a href="#">GitHub commit</a></li>
+          <li>Site: <a href="https://davidmonis.github.io/ProjectArs/">ProjectArs</a></li>
         </ul>
       </article>
       -->
     </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>For collaboration, feedback, or inquiries, reach out here:</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:david5.monis@gmail.com">david5.monis@gmail.com</a></li>
+          <li>Public page: <a href="https://davidmonis.github.io/ProjectArs/" target="_blank" rel="noopener">ProjectArs</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> ProjectArs. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container foot">
+      <p>© <span id="year"></span> ProjectArs — All rights reserved.</p>
+      <a class="to-top" href="#">Back to top ↑</a>
     </div>
   </footer>
 
   <script>
-    // Optional: keep the copyright year current
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
