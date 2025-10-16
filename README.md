@@ -10,7 +10,7 @@ A story-driven cooperative strategy game where you play with friends — or with
 ## Vision
 Create a new story-first cooperative strategy experience and develop **AI teammates** that can seamlessly replace humans and adapt over time.
 
-## Roadmap (High-Level)
+## Roadmap
 - **Year 1 — Foundations:**  
   Buiid simple strategy game (build → gather → train → final battle), with lightweight leaderboard on the site. 
   Learn the basics of ML, build a first PyTorch agent, and try a beginner Kaggle competition. 
