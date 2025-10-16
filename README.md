@@ -30,4 +30,4 @@ Create a new story-first cooperative strategy experience and develop **AI teamma
 Updates will appear on the website’s **Progress** tab.
 
 ---
-© ProjectArs
+© ProjectArs — **All rights reserved.**
