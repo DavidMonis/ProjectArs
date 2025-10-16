@@ -8,77 +8,63 @@
   <meta name="description" content="ProjectArs — development progress and contact." />
 </head>
 <body>
-  <!-- New minimal top bar -->
-  <header class="topbar">
-    <div class="container bar">
-      <a class="brand" href="#">
-        <span class="logo">PA</span>
-        <span class="wordmark">ProjectArs</span>
-      </a>
-      <nav class="nav">
+
+  <!-- Minimal, redesigned masthead (no sticky bar) -->
+  <header class="masthead">
+    <div class="container frame">
+      <div class="brand">
+        <div class="logo-ring"><span>PA</span></div>
+        <div class="title-group">
+          <h1>ProjectArs</h1>
+          <p class="tag">Co-op strategy • adaptive AI teammate</p>
+        </div>
+      </div>
+
+      <nav class="chips" aria-label="Primary">
         <a href="#progress">Progress</a>
+        <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">YouTube</a>
         <a href="#contact">Contact</a>
-        <a class="btn" href="https://davidmonis.github.io/ProjectArs/" target="_blank" rel="noopener">Open Site</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1>Development Progress</h1>
-      <p class="sub">Milestones, devlogs, and build notes for ProjectArs.</p>
-    </div>
-  </section>
-
   <main class="container">
-    <!-- PROGRESS ONLY -->
-    <section id="progress" class="section">
-      <div class="card empty">
-        <h2>Progress</h2>
-        <p>No public updates yet. New entries will appear here.</p>
-        <details class="hint">
-          <summary>How to add an update (template)</summary>
-          <article class="card progress-item">
-            <header>
-              <h3>[YYYY-MM-DD] Title of update</h3>
-              <span class="badge">Devlog</span>
-            </header>
-            <p>Short summary of what changed and why it matters.</p>
-            <ul class="meta">
-              <li>Build: <a href="#">Download</a></li>
-              <li>Video: <a href="#">YouTube</a></li>
-              <li>Code: <a href="#">GitHub commit</a></li>
-            </ul>
-          </article>
-        </details>
-      </div>
 
-      <!-- Example (uncomment to use)
-      <article class="card progress-item">
-        <header>
-          <h3>2025-10-16 — Initial scaffold</h3>
-          <span class="badge">Setup</span>
-        </header>
-        <p>Created the public Progress page and structure for future devlogs.</p>
-        <ul class="meta">
-          <li>Site: <a href="https://davidmonis.github.io/ProjectArs/">ProjectArs</a></li>
-        </ul>
-      </article>
-      -->
+    <!-- PROGRESS -->
+    <section id="progress" class="section">
+      <div class="card">
+        <h2>Plan for Year 1</h2>
+        <p>
+          The project will be split into <strong>two parallel tracks</strong>. Each week I will focus on
+          one of the tracks and publish ongoing progress to the <strong>GitHub repository</strong> and
+          to a public devlog on my <strong>YouTube channel</strong>. At the end of the week, I’ll post
+          a <strong>combined weekly update</strong> on the ProjectArs site.
+        </p>
+
+        <div class="follow">
+          <h3 class="muted">Where to follow</h3>
+          <ul>
+            <li>Code & issues: <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">github.com/DavidMonis/ProjectArs</a></li>
+            <li>Videos related to the game: <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">youtube.com/@RealProjectArs</a></li>
+            <li>Questions or feedback: <a href="mailto:realprojectars@gmail.com">realprojectars@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="card">
         <h2>Contact</h2>
-        <p>For collaboration, feedback, or inquiries, reach out here:</p>
         <ul class="contact-list">
-          <li>Email: <a href="mailto:david5.monis@gmail.com">david5.monis@gmail.com</a></li>
-          <li>Public page: <a href="https://davidmonis.github.io/ProjectArs/" target="_blank" rel="noopener">ProjectArs</a></li>
+          <li>GitHub: <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">DavidMonis/ProjectArs</a></li>
+          <li>YouTube: <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">@RealProjectArs</a></li>
+          <li>Email: <a href="mailto:realprojectars@gmail.com">realprojectars@gmail.com</a></li>
         </ul>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">

@@ -25,48 +25,45 @@ body{
 
 .container{width:min(1100px,90vw); margin-inline:auto}
 
-/* New top bar */
-.topbar{
-  position:sticky; top:0; z-index:100;
-  backdrop-filter:saturate(140%) blur(10px);
-  background:linear-gradient(180deg, rgba(10,12,18,0.85), rgba(10,12,18,0.55));
+/* New masthead */
+.masthead{
+  padding:48px 0 22px;
+  background:
+    radial-gradient(800px 400px at 0% 0%, rgba(124,92,255,0.20), transparent 60%),
+    radial-gradient(800px 400px at 100% 0%, rgba(76,201,240,0.20), transparent 60%);
   border-bottom:1px solid var(--border);
 }
-.bar{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:14px 0; gap:16px;
+.frame{
+  display:flex; flex-direction:column; gap:18px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:18px 18px;
+  box-shadow:var(--shadow);
 }
-.brand{
-  display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text);
+.brand{ display:flex; align-items:center; gap:14px }
+.logo-ring{
+  width:56px; height:56px; border-radius:50%;
+  display:grid; place-items:center; font-weight:900;
+  color:#fff; letter-spacing:0.5px;
+  background:radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,0.25), rgba(255,255,255,0) 60%),
+             linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow:0 10px 28px rgba(0,0,0,0.45), inset 0 0 0 2px rgba(255,255,255,0.18);
 }
-.logo{
-  width:38px; height:38px; border-radius:12px; display:grid; place-items:center;
-  background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  color:#fff; font-weight:800; letter-spacing:0.5px; box-shadow:var(--shadow);
-}
-.wordmark{font-weight:800; letter-spacing:0.3px}
+.title-group h1{ margin:0; font-size:1.9rem; letter-spacing:0.3px }
+.title-group .tag{ margin:4px 0 0; color:var(--muted) }
 
-.nav{display:flex; align-items:center; gap:12px}
-.nav a{
-  text-decoration:none; color:var(--muted); font-weight:600; padding:8px 10px; border-radius:10px;
+.chips{ display:flex; flex-wrap:wrap; gap:10px }
+.chips a{
+  text-decoration:none; color:var(--text); font-weight:700;
+  padding:10px 14px; border-radius:999px;
+  background:linear-gradient(135deg, rgba(124,92,255,0.22), rgba(76,201,240,0.18));
+  border:1px solid rgba(255,255,255,0.16);
+  box-shadow:var(--shadow);
 }
-.nav a:hover{color:var(--text); background:rgba(255,255,255,0.04)}
-.nav .btn{
-  color:#fff; background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  border:1px solid rgba(255,255,255,0.15); box-shadow:var(--shadow); padding:9px 14px
-}
+.chips a:hover{ filter:brightness(1.05) }
 
-/* Hero */
-.hero{
-  padding:56px 0 24px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
-  border-bottom:1px solid var(--border);
-}
-.hero-inner{ text-align:center }
-.hero h1{ margin:6px 0 6px; font-size:2rem }
-.hero .sub{ margin:0; color:var(--muted) }
-
-/* Sections */
+/* Sections & cards */
 .section{ padding:28px 0 }
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -74,29 +71,11 @@ body{
   padding:18px; box-shadow:var(--shadow);
 }
 .card h2, .card h3{ margin:0 0 10px }
+.muted{ color:var(--muted); font-weight:700; font-size:0.95rem; text-transform:uppercase; letter-spacing:0.4px }
 
-.empty p{ margin:0 0 10px }
-.hint{
-  margin-top:12px; padding:0;
-  border:none; background:transparent; color:var(--muted)
-}
-.hint > summary{
-  cursor:pointer; padding:8px 12px; border-radius:12px;
-  background:rgba(255,255,255,0.03); border:1px solid var(--border)
-}
-.hint[open]{ padding:8px 0 0 }
-
-.badge{
-  font-size:0.75rem; padding:4px 8px; border-radius:999px;
-  border:1px solid var(--border); color:var(--muted)
-}
-.progress-item header{
-  display:flex; align-items:center; justify-content:space-between; gap:12px
-}
-.progress-item .meta{
-  display:flex; gap:14px; padding-left:18px; margin:10px 0 0;
-}
-.progress-item .meta a{ color:#cfe7ff }
+.follow ul{ margin:8px 0 0; padding-left:18px }
+.follow li{ margin:6px 0 }
+.follow a{ color:#cfe7ff }
 
 /* Contact */
 .contact-list{ margin:0; padding-left:18px }
@@ -116,6 +95,6 @@ body{
 .to-top:hover{ color:var(--text) }
 
 @media (max-width:560px){
-  .nav .btn{ display:none }
-  .hero h1{ font-size:1.6rem }
+  .title-group h1{ font-size:1.6rem }
+  .chips a{ padding:9px 12px }
 }
