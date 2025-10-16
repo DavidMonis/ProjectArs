@@ -27,7 +27,7 @@ Create a new story-first cooperative strategy experience and develop **AI teamma
 
 
 ## Progress
-Updates will appear on the website’s **Progress** tab.
+Updates will appear on the website.
 
 ---
 © ProjectArs
