@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProjectArs — Progress</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="ProjectArs — development progress and contact." />
+</head>
+<body>
+
+  <!-- Minimal, redesigned masthead (no sticky bar) -->
+  <header class="masthead">
+    <div class="container frame">
+      <div class="brand">
+        <div class="logo-ring"><span>PA</span></div>
+        <div class="title-group">
+          <h1>ProjectArs</h1>
+          <p class="tag">Co-op strategy • adaptive AI teammate</p>
+        </div>
+      </div>
+
+      <nav class="chips" aria-label="Primary">
+        <a href="#progress">Progress</a>
+        <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">YouTube</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PROGRESS -->
+    <section id="progress" class="section">
+      <div class="card">
+        <h2>Plan for Year 1</h2>
+        <p>
+          The project will be split into <strong>two parallel tracks</strong>. Each week I will focus on
+          one of the tracks and publish ongoing progress to the <strong>GitHub repository</strong> and
+          to a public devlog on my <strong>YouTube channel</strong>. At the end of the week, I’ll post
+          a <strong>combined weekly update</strong> on the ProjectArs site. 
+        </p>
+
+        <div class="follow">
+          <h3 class="muted">Where to follow</h3>
+          <ul>
+            <li>Code & issues: <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">github.com/DavidMonis/ProjectArs</a></li>
+            <li>Videos related to the game: <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">youtube.com/@RealProjectArs</a></li>
+            <li>Questions or feedback: <a href="mailto:realprojectars@gmail.com">realprojectars@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Week 1 progress -->
+      <div class="card">
+        <h2>Week 1 — Setup & Foundations</h2>
+        <p>
+          This week I set up the core infrastructure for the project: Gmail, the GitHub repository,
+          the YouTube channel, project web pages, and the initial <code>.md</code> files and website structure.
+          I also outlined how all parts connect and spoke with people in the field who can help guide the next steps.
+        </p>
+        <p>
+          To prepare for the AI teammate, I completed a focused Python refresher and started with PyTorch,
+          since the agent will be built in PyTorch. I also did a short Unreal Engine refresher — mainly
+          Blueprints and a quick revisit of Paper2D.
+        </p>
+        <div class="follow">
+          <h3 class="muted">Resources I used</h3>
+          <ul>
+            <li>Python: 
+              <a href="https://www.youtube.com/watch?v=rLyYb7BFgQI&t=822s" target="_blank" rel="noopener">Video 1</a>,
+              <a href="https://www.youtube.com/watch?v=VchuKL44s6E" target="_blank" rel="noopener">Video 2</a>
+            </li>
+            <li>Unreal Engine: course lectures, and Paper2D refresher — 
+              <a href="https://www.youtube.com/watch?v=QVxK2dPJr4g&list=WL&index=12&t=208s" target="_blank" rel="noopener">Paper2D video</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Week 2 progress -->
+      <div class="card">
+        <h2>WEEEK 2 — Map & Mechanics Timelapse</h2>
+        <p>
+          In this update, I started working directly in <strong>Unreal Engine</strong>. 
+          You’ll see how the first version of the game map was created, 
+          basic mechanics were implemented, and the first UI tests were done — all shown in a smooth <strong>timelapse</strong>.
+        </p>
+        <p>
+          It’s the first real step from planning into building the actual world of the game. 
+          Watch the process, the progress, and how the vision slowly comes to life. 🚀
+        </p>
+
+        <div class="follow">
+          <h3 class="muted">Watch the video</h3>
+          <ul>
+            <li>YouTube: <a href="https://www.youtube.com/watch?v=QMl_YM98xTo" target="_blank" rel="noopener">WEEEK 2 — Unreal Engine Progress Timelapse</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="card">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>GitHub: <a href="https://github.com/DavidMonis/ProjectArs" target="_blank" rel="noopener">DavidMonis/ProjectArs</a></li>
+          <li>YouTube: <a href="https://www.youtube.com/@RealProjectArs" target="_blank" rel="noopener">@RealProjectArs</a></li>
+          <li>Email: <a href="mailto:realprojectars@gmail.com">realprojectars@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p>© <span id="year"></span> ProjectArs — All rights reserved.</p>
+      <a class="to-top" href="#">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
