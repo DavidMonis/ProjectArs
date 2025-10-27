@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Maps/Prototype01.umap",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Blueprints/Core/BP_PlayerController_UIOnly.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Blueprints/Core/BP_GameMode_TheFounders.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/M_Map.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/UI/W_HUD.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Background/M_Map.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Background/Map.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Blueprints/Core/BP_GameState_TheFounders.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/brick.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/gold.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/iron.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/people.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/wheat.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Items/wool.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Blueprints/Core/BP_GameState_TheFounders1.uasset",
+				"C:/Users/David/Documents/Unreal Projects/TheFounders/Content/Graphics/Map.uasset"
+			]
+		}
+	]
+}
