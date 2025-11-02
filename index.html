@@ -99,6 +99,31 @@
           </ul>
         </div>
       </div>
+
+      <!-- Week 3 progress -->
+      <div class="card">
+        <h2>WEEEK 3 — First Steps in PyTorch</h2>
+        <p>
+          This week I dove into <strong>PyTorch</strong> and <strong>neural networks</strong>. I followed a hands‑on
+          video course to grasp the basics and then implemented a <em>single‑neuron</em> linear model (from a mentor’s
+          snippet) to really understand what each part of a training script does.
+        </p>
+        <p>
+          I practiced the full training loop — forward pass, <code>MSELoss</code>, and the <code>Adam</code> optimizer —
+          including the classic sequence: <code>zero_grad()</code> → <code>backward()</code> → <code>step()</code>. I logged
+          the loss and weights during training, plotted a loss curve, measured runtime, and ran tests on sample inputs
+          (on CUDA and CPU). I also learned the difference between saving <em>only weights</em> via <code>state_dict</code>
+          and saving the <em>entire model</em>, then reloaded the model for inference to validate everything end‑to‑end.
+        </p>
+        <div class="follow">
+          <h3 class="muted">Resources I used</h3>
+          <ul>
+            <li>Course: <a href="https://www.youtube.com/watch?v=V_xro1bcAuA&t=5987s" target="_blank" rel="noopener">PyTorch – full tutorial (YouTube)</a></li>
+            <li>Reference snippet: <a href="https://github.com/andylucny/book/tree/master/01-1-single-neuron" target="_blank" rel="noopener">Single‑neuron example</a></li>
+          </ul>
+        </div>
+      </div>
+
     </section>
 
     <!-- CONTACT -->
