@@ -263,6 +263,33 @@
     <li>Economy loop is now grounded in consistent rules</li>
   </ul>
 
+  
+<div class="card">
+        <h2>WEEEK 9 — Reinforcement Learning & Snake AI</h2>
+        <p>
+          This week I shifted focus from supervised learning to <strong>Reinforcement Learning (RL)</strong> to build a foundation 
+          for the future AI teammate. I chose the classic game <strong>Snake</strong> as a testbed for implementing a <strong>Deep Q-Learning</strong> agent.
+        </p>
+        <p>
+          <strong>The Environment:</strong> I built the game using <strong>Pygame</strong>, creating both a human-playable version and 
+          an AI-ready version. The AI version accepts vector inputs and provides specific rewards and penalties to guide the learning process.
+        </p>
+        <p>
+          <strong>The AI Agent:</strong> The agent uses a neural network to evaluate the state based on <strong>11 input parameters</strong> 
+          (e.g., collision risks, direction, food location). I utilized an <strong>Epsilon-Greedy strategy</strong> for decision making 
+          and implemented <strong>Experience Replay</strong> (using both short-term memory and long-term history) to ensure stable training. 
+          I also built a visualization tool to track the agent's progress.
+        </p>
+
+        <div class="follow">
+          <h3 class="muted">Resources</h3>
+          <ul>
+            <li>Source Code: <a href="https://github.com/DavidMonis/RocnikovyProjekt" target="_blank" rel="noopener">Snake AI Repository</a></li>
+          </ul>
+        </div>
+      </div>
+  
+
   <div class="follow">
     <h3 class="muted">Watch the video</h3>
     <ul>
